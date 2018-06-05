@@ -1,0 +1,494 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/Users/brielly/repos/personal-site-gatsby/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/brielly/repos/personal-site-gatsby/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6575ca0448e023ad528e1692fc2ac18a",
+        "description": "Plugin dev-404-page",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "55eacc3f2b3839134fd491b2a5ed1cc8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e9f76dda5da3d708edd7218fef3976fd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "00803cc7b35e203313049f516840dcea",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "de6d7ebc8f52d70d60593daf6f4619d6",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "1dbfb471493f324d10e217d30cebd901",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "9ef2582dda42f78e3a1be6d17c7aec01",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "2.0.11",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "2.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "a89d93e400714338d736f5a47729db4d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/brielly/repos/personal-site-gatsby",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "38ca4773c63d61f48d165edd6e1f7b06",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/brielly/repos/personal-site-gatsby",
+      "packageJson": {
+        "name": "gatsby-starter-default",
+        "description": "Gatsby default starter",
+        "version": "1.0.0",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.247"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.40"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^2.0.10"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "prettier",
+            "version": "^1.12.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e859337acbf8cfd1b467b33d7850742b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Brendan Rielly"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-06-05T21:25:03.559Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7577cd8d62d2405d0649a7d813f7d834",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "layout": "index",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/Users/brielly/repos/personal-site-gatsby/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/brielly/repos/personal-site-gatsby/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7a48fcceb54ed5251b7717d3a8418244",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/brielly/repos/personal-site-gatsby/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/brielly/repos/personal-site-gatsby/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f4f9d54a9992cb543a36f727cd3be74b",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page-2/": {
+      "layout": "index",
+      "jsonName": "page-2.json",
+      "internalComponentName": "ComponentPage2",
+      "path": "/page-2/",
+      "component": "/Users/brielly/repos/personal-site-gatsby/src/pages/page-2.js",
+      "componentChunkName": "component---src-pages-page-2-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/brielly/repos/personal-site-gatsby/src/pages/page-2.js",
+      "id": "SitePage /page-2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7abd8706b6bc71edf68f8fd3df9d8e3b",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/brielly/repos/personal-site-gatsby/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/Users/brielly/repos/personal-site-gatsby/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5a81b736573d08efe5ff4c2fcd1b3e97",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "9593dcd611d2f6ac5fd021fe3f385691"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "LAYOUT___index"
+      ]
+    },
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}
