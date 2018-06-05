@@ -69,7 +69,6 @@ class IndexPage extends Component {
 					onClickPrev={this.gotoPrevious}
 					onClickThumbnail={this.gotoImage}
 					onClose={this.closeLightbox}
-					showThumbnails
 					backdropClosesModal
 
 				/>
@@ -79,6 +78,7 @@ class IndexPage extends Component {
 			    <Link to="/page-2/">Go to page 2</Link>
 			    <button onClick={() => this.openLightbox(0, event)}>Open Lightbox</button>
 			    <GalleryImage src={image1} onClick={() => this.openLightbox(0, event)} />
+			    <GalleryImage src={image2} onClick={() => this.openLightbox(1, event)} />
 			</div>
 		);
 	}
