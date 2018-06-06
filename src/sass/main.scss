@@ -1,5 +1,5 @@
 $main-color: white;
-$text-color: black;
+$text-color: #2b2b2b;
 $accent2: rgba(41, 115, 115, 1);
 $super-accent: rgba(255, 133, 82, 1);
 $grey: rgba(230, 230, 230, 1);
@@ -16,6 +16,7 @@ h4,
 h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    color: $text-color;
 }
 
 h1 {
@@ -45,11 +46,13 @@ li,
 ol,
 span {
     font-family: 'Roboto', sans-serif;
+    color: $text-color;
 }
 
 p {
     margin: 10px 0;
     font-size: 20px;
+    color: $text-color;
 }
 
 li {
@@ -123,6 +126,7 @@ a:hover {
         position: absolute;
         bottom: 10px;
         right: 20px;
+        color: $text-color;
     }
     .sitename {
         position: absolute;
