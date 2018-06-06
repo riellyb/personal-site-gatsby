@@ -28,7 +28,6 @@ export default class ContactForm extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
       .catch(error => alert(error));
   };
 
@@ -42,7 +41,6 @@ export default class ContactForm extends React.Component {
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <p hidden>
             <label>
