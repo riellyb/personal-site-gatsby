@@ -4,8 +4,7 @@ import Styles from '../sass/main.scss'
 import Lightbox from 'react-images'
 import GalleryImage from '../components/galleryImage'
 import PortfolioItem from '../components/portfolioItem'
-import image1 from '../images/DSC01756.jpg'
-import image2 from '../images/DSC03785.jpg'
+import ImageArray from '../images/imageArray'
 import sogImage from '../images/state-of-gold.jpg'
 import rbbgImage from '../images/rbbg.jpg'
 import jacketImage from '../images/cc-jacketguide.jpg'
@@ -15,9 +14,7 @@ class IndexPage extends Component {
 	constructor () {
 		super();
 
-		this.images = 
-			[{ src: image1}, { src: image2}]
-		;
+		this.images = ImageArray;
 		this.state = {
 			lightboxIsOpen: false,
 			currentImage: 0,
@@ -93,13 +90,10 @@ class IndexPage extends Component {
 			    </section>
 			    <section className={'main-section'}>
 				    <div className={'main-image-gallery'}>
-				    	{/*for(let i = 0; i < 12; i++) {
+				    	{this.images.map( (image, index) => {
+				    		return <GalleryImage key={index} src={image.src} onClick={() => this.openLightbox(index, event)} />
+				    	})}
 
-				    		<GalleryImage src={image1} onClick={() => this.openLightbox(0, event)} />
-				    	}*/}
-
-				    	<GalleryImage src={image1} onClick={() => this.openLightbox(0, event)} />
-				    	<GalleryImage src={image2} onClick={() => this.openLightbox(1, event)} />
 				    </div>
 			    </section>
 			    
