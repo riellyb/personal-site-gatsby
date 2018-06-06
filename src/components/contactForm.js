@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { navigateTo } from "gatsby-link";
 
 function encode(data) {
   return Object.keys(data)
