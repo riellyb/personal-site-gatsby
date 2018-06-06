@@ -76,11 +76,6 @@ class IndexPage extends Component {
 					backdropClosesModal
 					width={2000}
 				/>
-				<h1>Brendan Rielly</h1>
-			    <p>Welcome to your new Gatsby site.</p>
-			    <p>Now go build something great.</p>
-			    <Link to="/page-2/">Go to page 2</Link>
-
 			    <section className='main-section'>
 			    	<h2>Examples of My Work</h2>
 			    	<div className='main-work-gallery'>

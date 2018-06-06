@@ -5,7 +5,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div style={{minHeight: '100vh'}}>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[

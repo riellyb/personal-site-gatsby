@@ -28,6 +28,7 @@ export default class ContactForm extends React.Component {
         ...this.state
       })
     })
+      .then(() => navigateTo(form.getAttribute("action")))
       .catch(error => alert(error));
   };
 
@@ -39,6 +40,7 @@ export default class ContactForm extends React.Component {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          action="/thanks/"
           onSubmit={this.handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
