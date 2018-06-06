@@ -5,6 +5,7 @@ import Lightbox from 'react-images'
 import GalleryImage from '../components/galleryImage'
 import PortfolioItem from '../components/portfolioItem'
 import ImageArray from '../images/imageArray'
+import ContactForm from '../components/contactForm'
 import sogImage from '../images/state-of-gold.jpg'
 import rbbgImage from '../images/rbbg.jpg'
 import jacketImage from '../images/cc-jacketguide.jpg'
@@ -116,7 +117,9 @@ class IndexPage extends Component {
 
 				    </div>
 			    </section>
-			    
+			    <section className='main-section'>
+			    	<ContactForm />
+			    </section>		    
 			    
 			</div>
 		);
