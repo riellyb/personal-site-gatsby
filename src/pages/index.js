@@ -2,8 +2,13 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Lightbox from 'react-images'
 import GalleryImage from '../components/galleryImage'
+import PortfolioItem from '../components/portfolioItem'
 import image1 from '../images/DSC01756.jpg'
 import image2 from '../images/DSC03785.jpg'
+import sogImage from '../images/state-of-gold.jpg'
+import rbbgImage from '../images/rbbg.jpg'
+import jacketImage from '../images/cc-jacketguide.jpg'
+import andiamoImage from '../images/cc-andiamo.jpg'
 
 class IndexPage extends Component {
 	constructor () {
@@ -76,9 +81,28 @@ class IndexPage extends Component {
 			    <p>Welcome to your new Gatsby site.</p>
 			    <p>Now go build something great.</p>
 			    <Link to="/page-2/">Go to page 2</Link>
-			    <button onClick={() => this.openLightbox(0, event)}>Open Lightbox</button>
-			    <GalleryImage src={image1} onClick={() => this.openLightbox(0, event)} />
-			    <GalleryImage src={image2} onClick={() => this.openLightbox(1, event)} />
+
+			    <section className={'main-section'}>
+			    	<div className={'main-work-gallery'}>
+			    		<PortfolioItem href={'https://www.backcountry.com/stories/on-the-road-in-california'} src={sogImage} title={'Backcountry State of Gold'} />
+			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/road-bike-guide'} src={rbbgImage} title={'Competitive Cyclist Road Bike Buyer\'s Guide'} />
+			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/jacket-buyers-guide'} src={jacketImage} title={'Competitive Cyclist Jacket Guide'} />
+			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/andiamo'} src={andiamoImage} title={'Competitive Cyclist Andiamo'} />			    		
+			    	</div>
+			    </section>
+			    <section className={'main-section'}>
+				    <div className={'main-image-gallery'}>
+				    	{/*for(let i = 0; i < 12; i++) {
+
+				    		<GalleryImage src={image1} onClick={() => this.openLightbox(0, event)} />
+				    	}*/}
+
+				    	<GalleryImage src={image1} onClick={() => this.openLightbox(0, event)} />
+				    	<GalleryImage src={image2} onClick={() => this.openLightbox(1, event)} />
+				    </div>
+			    </section>
+			    
+			    
 			</div>
 		);
 	}
