@@ -62,7 +62,7 @@ class IndexPage extends Component {
 	}
 	render () {
 		return (
-			<div className="section">
+			<div>
 				<Lightbox
 					currentImage={this.state.currentImage}
 					images={this.images}
@@ -80,16 +80,16 @@ class IndexPage extends Component {
 			    <p>Now go build something great.</p>
 			    <Link to="/page-2/">Go to page 2</Link>
 
-			    <section className={'main-section'}>
-			    	<div className={'main-work-gallery'}>
+			    <section className='main-section'>
+			    	<div className='main-work-gallery'>
 			    		<PortfolioItem href={'https://www.backcountry.com/stories/on-the-road-in-california'} src={sogImage} title={'Backcountry State of Gold'} />
 			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/road-bike-guide'} src={rbbgImage} title={'Competitive Cyclist Road Bike Buyer\'s Guide'} />
 			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/jacket-buyers-guide'} src={jacketImage} title={'Competitive Cyclist Jacket Guide'} />
 			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/andiamo'} src={andiamoImage} title={'Competitive Cyclist Andiamo'} />			    		
 			    	</div>
 			    </section>
-			    <section className={'main-section'}>
-				    <div className={'main-image-gallery'}>
+			    <section className='main-section'>
+				    <div className='main-image-gallery'>
 				    	{this.images.map( (image, index) => {
 				    		return  <GalleryImage
 				    					key={index}
