@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import Styles from '../sass/main.scss'
 import Lightbox from 'react-images'
 import GalleryImage from '../components/galleryImage'
 import PortfolioItem from '../components/portfolioItem'
