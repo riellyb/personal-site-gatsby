@@ -5,7 +5,7 @@ const PortfolioItem = (props) => (
   <div className='main-work-gallery-item'>
   	<div className='main-work-content'>
 	    <a target="_blank" href={props.href}>
-	    	<h3>{props.title}</h3>
+	    	{props.title}
 	    	<img  style={{maxWidth: '100%', display: 'block'}} src={props.src} />
 	    </a>
     </div>

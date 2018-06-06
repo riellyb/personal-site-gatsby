@@ -82,10 +82,26 @@ class IndexPage extends Component {
 
 			    <section className='main-section'>
 			    	<div className='main-work-gallery'>
-			    		<PortfolioItem href={'https://www.backcountry.com/stories/on-the-road-in-california'} src={sogImage} title={'Backcountry State of Gold'} />
-			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/road-bike-guide'} src={rbbgImage} title={'Competitive Cyclist Road Bike Buyer\'s Guide'} />
-			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/jacket-buyers-guide'} src={jacketImage} title={'Competitive Cyclist Jacket Guide'} />
-			    		<PortfolioItem href={'https://www.competitivecyclist.com/sc/andiamo'} src={andiamoImage} title={'Competitive Cyclist Andiamo'} />			    		
+			    		<PortfolioItem 
+				    		href={'https://www.backcountry.com/stories/on-the-road-in-california'}
+				    		src={sogImage}
+				    		title={<h3>Backcountry<br />State of Gold</h3>}
+			    		/>
+			    		<PortfolioItem 
+				    		href={'https://www.competitivecyclist.com/sc/road-bike-guide'}
+				    		src={rbbgImage}
+				    		title={<h3>Competitive Cyclist<br />Road Bike Buyer's Guide</h3>}
+			    		/>
+			    		<PortfolioItem 
+				    		href={'https://www.competitivecyclist.com/sc/jacket-buyers-guide'}
+				    		src={jacketImage}
+				    		title={<h3>Competitive Cyclist<br />Jacket Guide</h3>}
+			    		/>
+			    		<PortfolioItem 
+				    		href={'https://www.competitivecyclist.com/sc/andiamo'}
+				    		src={andiamoImage}
+				    		title={<h3>Competitive Cyclist<br />Andiamo</h3>}
+			    		/>			    		
 			    	</div>
 			    </section>
 			    <section className='main-section'>
