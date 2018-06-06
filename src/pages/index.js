@@ -82,6 +82,7 @@ class IndexPage extends Component {
 			    <Link to="/page-2/">Go to page 2</Link>
 
 			    <section className='main-section'>
+			    	<h2>Examples of My Work</h2>
 			    	<div className='main-work-gallery'>
 			    		<PortfolioItem 
 				    		href={'https://www.backcountry.com/stories/on-the-road-in-california'}
@@ -106,6 +107,7 @@ class IndexPage extends Component {
 			    	</div>
 			    </section>
 			    <section className='main-section'>
+			    	<h2>Photography</h2>
 				    <div className='main-image-gallery'>
 				    	{this.images.map( (image, index) => {
 				    		return  <GalleryImage
@@ -118,6 +120,7 @@ class IndexPage extends Component {
 				    </div>
 			    </section>
 			    <section className='main-section'>
+			    	<h2>Contact</h2>
 			    	<ContactForm />
 			    </section>		    
 			    
