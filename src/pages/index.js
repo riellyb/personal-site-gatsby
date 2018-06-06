@@ -73,7 +73,7 @@ class IndexPage extends Component {
 					onClickThumbnail={this.gotoImage}
 					onClose={this.closeLightbox}
 					backdropClosesModal
-
+					width={2000}
 				/>
 				<h1>Brendan Rielly</h1>
 			    <p>Welcome to your new Gatsby site.</p>
@@ -91,7 +91,11 @@ class IndexPage extends Component {
 			    <section className={'main-section'}>
 				    <div className={'main-image-gallery'}>
 				    	{this.images.map( (image, index) => {
-				    		return <GalleryImage key={index} src={image.src} onClick={() => this.openLightbox(index, event)} />
+				    		return  <GalleryImage
+				    					key={index}
+				    					src={image.src}
+				    					onClick={() => this.openLightbox(index, event)}
+				    				/>
 				    	})}
 
 				    </div>
