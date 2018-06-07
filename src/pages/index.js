@@ -38,20 +38,20 @@ class IndexPage extends Component {
         axios.get('https://res.cloudinary.com/brendanrielly/image/list/portfolio-photos.json')
             .then(res => {
                 console.log(res.data.resources);
-                this.setState({images: res.data.resources}, createLightboxImages());
+                this.setState({images: res.data.resources},
+					() => {
+						let lightboxImages = [];
+						this.state.images.map((image, index) => {
+							let src = cloudinaryCore.url(image.public_id) + '.jpg'
+							lightboxImages[index] = {src: src}
+						});
+						this.setState({
+							lightboxImages : lightboxImages
+						});
+					}
+				);
             });
     }
-    createLightboxImages() {
-		let lightboxImages = [];
-		this.state.images.map((image, index) => {
-			let src = cloudinaryCore.url(image.public_id) + '.jpg'
-			lightboxImages[index] = {src: src}
-		});
-
-		this.setState({
-			lightboxImages : lightboxImages
-		});
-	}
 	openLightbox (index, event) {
 		event.preventDefault();
 		this.setState({
