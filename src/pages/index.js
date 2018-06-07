@@ -11,9 +11,9 @@ import rbbgImage from '../images/rbbg.jpg'
 import jacketImage from '../images/cc-jacketguide.jpg'
 import andiamoImage from '../images/cc-andiamo.jpg'
 import axios from 'axios';
-import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+import { CloudinaryContext } from 'cloudinary-react';
 import cloudinary from 'cloudinary-core';
-const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'demo'});
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'brendanrielly'});
 
 class IndexPage extends Component {
 	constructor () {
@@ -42,7 +42,8 @@ class IndexPage extends Component {
 					() => {
 						let lightboxImages = [];
 						this.state.images.map((image, index) => {
-							lightboxImages[index] = {src: cloudinaryCore.url(image.public_id)}
+							let src = cloudinaryCore.url(image.public_id) + '.jpg'
+							lightboxImages[index] = {src: src}
 						});
 						this.setState({
 							lightboxImages : lightboxImages
@@ -89,7 +90,7 @@ class IndexPage extends Component {
 			<div>
 				<Lightbox
 					currentImage={this.state.currentImage}
-					images={this.state.images}
+					images={this.state.lightboxImages}
 					isOpen={this.state.lightboxIsOpen}
 					onClickImage={this.handleClickImage}
 					onClickNext={this.gotoNext}

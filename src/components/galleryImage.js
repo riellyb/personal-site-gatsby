@@ -1,5 +1,5 @@
 import React from 'react'
-import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+import { Image } from 'cloudinary-react';
 
 const GalleryImage = (props) => (
     <div onClick={props.onClick} className='main-image-gallery-image' style={{cursor: 'pointer'}}>
