@@ -1,8 +1,9 @@
 import React from 'react'
+import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
 
 const GalleryImage = (props) => (
-    <div className='main-image-gallery-image' style={{cursor: 'pointer'}}>
-        <img onClick={props.onClick} style={{maxWidth: '100%', display: 'block'}} src={props.src} />
+    <div onClick={props.onClick} className='main-image-gallery-image' style={{cursor: 'pointer'}}>
+        <Image style={{maxWidth: '100%', display: 'block'}} publicId={props.id} />
     </div>
 )
 

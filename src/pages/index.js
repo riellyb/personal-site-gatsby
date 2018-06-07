@@ -10,15 +10,20 @@ import sogImage from '../images/state-of-gold.jpg'
 import rbbgImage from '../images/rbbg.jpg'
 import jacketImage from '../images/cc-jacketguide.jpg'
 import andiamoImage from '../images/cc-andiamo.jpg'
+import axios from 'axios';
+import { CloudinaryContext, Transformation, Image } from 'cloudinary-react';
+import cloudinary from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'demo'});
 
 class IndexPage extends Component {
 	constructor () {
 		super();
 
-		this.images = ImageArray;
 		this.state = {
 			lightboxIsOpen: false,
 			currentImage: 0,
+			images: [],
+			lightboxImages: []
 		};
 
 		this.closeLightbox = this.closeLightbox.bind(this);
@@ -28,6 +33,24 @@ class IndexPage extends Component {
 		this.handleClickImage = this.handleClickImage.bind(this);
 		this.openLightbox = this.openLightbox.bind(this);
 	}
+	componentDidMount() {
+        // Request for images tagged portfolio-photos       
+        axios.get('https://res.cloudinary.com/brendanrielly/image/list/portfolio-photos.json')
+            .then(res => {
+                console.log(res.data.resources);
+                this.setState({images: res.data.resources},
+					() => {
+						let lightboxImages = [];
+						this.state.images.map((image, index) => {
+							lightboxImages[index] = {src: cloudinaryCore.url(image.public_id)}
+						});
+						this.setState({
+							lightboxImages : lightboxImages
+						});
+					}
+				);
+            });
+    }
 	openLightbox (index, event) {
 		event.preventDefault();
 		this.setState({
@@ -66,7 +89,7 @@ class IndexPage extends Component {
 			<div>
 				<Lightbox
 					currentImage={this.state.currentImage}
-					images={this.images}
+					images={this.state.images}
 					isOpen={this.state.lightboxIsOpen}
 					onClickImage={this.handleClickImage}
 					onClickNext={this.gotoNext}
@@ -104,14 +127,15 @@ class IndexPage extends Component {
 			    <section className='main-section'>
 			    	<h2>Photography</h2>
 				    <div className='main-image-gallery'>
-				    	{this.images.map( (image, index) => {
-				    		return  <GalleryImage
-				    					key={index}
-				    					src={image.src}
-				    					onClick={() => this.openLightbox(index, event)}
-				    				/>
-				    	})}
-
+				    	<CloudinaryContext cloudName="brendanrielly">
+					    	{this.state.images.map( (image, index) => {
+					    		return  <GalleryImage
+					    					key={image.public_id}
+					    					id={image.public_id}
+					    					onClick={() => this.openLightbox(index, event)}
+					    				/>
+					    	})}
+					    </CloudinaryContext>
 				    </div>
 			    </section>
 			    <section className='main-section'>
