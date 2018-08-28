@@ -17,10 +17,10 @@ const Header = ({ siteTitle }) => (
         </Link>
       </div>
       <ul>
-        <li className="about main-nav-item"><a href="#about">About</a></li>
-        <li className="work main-nav-item"><a href="#work">Work</a></li>
-        <li className="photos main-nav-item"><a href="#photos">Photos</a></li>
-        <li className="contact main-nav-item"><a href="#contact" className="nav-active">Contact</a></li>
+        <li className="main-nav-item"><a href="#about">About</a></li>
+        <li className="main-nav-item"><a href="#work">Work</a></li>
+        <li className="main-nav-item"><a href="#photos">Photos</a></li>
+        <li className="main-nav-item"><a href="#contact" className="nav-active">Contact</a></li>
     </ul>
     </nav>
   </header>

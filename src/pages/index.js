@@ -4,6 +4,8 @@ import Styles from '../sass/main.scss'
 import Lightbox from 'react-images'
 import GalleryImage from '../components/galleryImage'
 import PortfolioItem from '../components/portfolioItem'
+import About from '../components/about'
+import Skills from '../components/skills'
 import ImageArray from '../images/imageArray'
 import ContactForm from '../components/contactForm'
 import sogImage from '../images/state-of-gold.jpg'
@@ -101,9 +103,12 @@ class IndexPage extends Component {
 					width={2000}
 				/>
 				<section className="main-section" id="about">
+					<About />
+					<h2 className="section-header">Skills</h2>
+					<Skills />
 				</section>
 			    <section className="main-section" id="work">
-			    	<h2>Examples of My Work</h2>
+			    	<h2 className="section-header">Examples of My Work</h2>
 			    	<div className="main-work-gallery">
 			    		<PortfolioItem 
 				    		href={'https://www.backcountry.com/stories/on-the-road-in-california'}
@@ -128,21 +133,21 @@ class IndexPage extends Component {
 			    	</div>
 			    </section>
 			    <section className="main-section" id="photos">
-			    	<h2>Photography</h2>
+			    	<h2 className="section-header">Photography</h2>
 				    <div className="main-image-gallery">
 				    	<CloudinaryContext cloudName="brendanrielly">
 					    	{this.state.images.map( (image, index) => {
 					    		return  <GalleryImage
 					    					key={image.public_id}
 					    					id={image.public_id}
-					    					onClick={() => this.openLightbox(index, event)}
+					    					onClick={(event) => this.openLightbox(index, event)}
 					    				/>
 					    	})}
 					    </CloudinaryContext>
 				    </div>
 			    </section>
 			    <section className="main-section" id="contact">
-			    	<h2>Contact</h2>
+			    	<h2 className="section-header">Contact</h2>
 			    	<ContactForm />
 			    </section>		    
 			    

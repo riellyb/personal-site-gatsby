@@ -34,7 +34,7 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="contact">
         <form
           name="contact"
           method="post"
@@ -69,7 +69,7 @@ export default class ContactForm extends React.Component {
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <input type="button" id="submit" value="Send" />
           </p>
         </form>
       </div>
