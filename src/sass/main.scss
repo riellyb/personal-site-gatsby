@@ -372,7 +372,7 @@ a:hover {
         border-radius: 3px;
         padding: 5px;
     }
-    input[type=button] {
+    button {
         background-color: $black;
         border: 1px solid white;
         font-Weight: bold;
@@ -385,7 +385,7 @@ a:hover {
         width: 130px;
         border-radius: 5px;
     }
-    input[type=button]:hover {
+    button:hover {
         background-color: $grey2;
     }
     textarea {

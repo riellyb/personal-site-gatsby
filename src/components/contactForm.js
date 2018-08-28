@@ -69,7 +69,7 @@ export default class ContactForm extends React.Component {
             </label>
           </p>
           <p>
-            <input type="button" id="submit" value="Send" />
+            <button type="submit" id="submit">Send</button>
           </p>
         </form>
       </div>
