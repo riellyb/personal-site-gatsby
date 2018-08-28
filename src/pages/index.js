@@ -87,7 +87,7 @@ class IndexPage extends Component {
 	}
 	render () {
 		return (
-			<div>
+			<div className="main">
 				<Lightbox
 					currentImage={this.state.currentImage}
 					images={this.state.lightboxImages}
@@ -100,9 +100,11 @@ class IndexPage extends Component {
 					backdropClosesModal
 					width={2000}
 				/>
-			    <section className='main-section'>
+				<section className="main-section" id="about">
+				</section>
+			    <section className="main-section" id="work">
 			    	<h2>Examples of My Work</h2>
-			    	<div className='main-work-gallery'>
+			    	<div className="main-work-gallery">
 			    		<PortfolioItem 
 				    		href={'https://www.backcountry.com/stories/on-the-road-in-california'}
 				    		src={sogImage}
@@ -125,9 +127,9 @@ class IndexPage extends Component {
 			    		/>			    		
 			    	</div>
 			    </section>
-			    <section className='main-section'>
+			    <section className="main-section" id="photos">
 			    	<h2>Photography</h2>
-				    <div className='main-image-gallery'>
+				    <div className="main-image-gallery">
 				    	<CloudinaryContext cloudName="brendanrielly">
 					    	{this.state.images.map( (image, index) => {
 					    		return  <GalleryImage
@@ -139,7 +141,7 @@ class IndexPage extends Component {
 					    </CloudinaryContext>
 				    </div>
 			    </section>
-			    <section className='main-section'>
+			    <section className="main-section" id="contact">
 			    	<h2>Contact</h2>
 			    	<ContactForm />
 			    </section>		    

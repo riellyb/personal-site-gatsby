@@ -4,6 +4,15 @@ $accent2: rgba(41, 115, 115, 1);
 $super-accent: rgba(255, 133, 82, 1);
 $grey: rgba(230, 230, 230, 1);
 $grey2: #7A7D7D;
+$black: #222;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 * {
     box-sizing: border-box;
     z-index: 1;
@@ -83,6 +92,11 @@ a:hover {
     color: $grey;
 }
 
+.header {
+    background-color: $black;
+    box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.3);
+}
+
 .cat {
     position: absolute;
     cursor: pointer;
@@ -127,7 +141,7 @@ a:hover {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.3);
     &.fixed {
         position: fixed;
     }
@@ -145,40 +159,6 @@ a:hover {
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
         cursor: pointer;
-
-        &:hover {
-            display: inline-block;
-            
-            -webkit-text-fill-color: transparent;
-            background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-            background-size: 400% 100%;
-            -webkit-animation: rainbow 5s ease infinite;
-            -z-animation: rainbow 5s ease infinite;
-            animation: rainbow 5s ease infinite;
-            -webkit-background-clip: text;
-        }
-    }
-    @-webkit-keyframes rainbow {
-        0% {
-            background-position: 0% 82%
-        }
-        50% {
-            background-position: 100% 19%
-        }
-        100% {
-            background-position: 0% 82%
-        }
-    }
-    @keyframes rainbow {
-        0% {
-            background-position: 0% 82%
-        }
-        50% {
-            background-position: 100% 19%
-        }
-        100% {
-            background-position: 0% 82%
-        }
     }
 }
 
@@ -260,10 +240,13 @@ a:hover {
     width: 50%;
     padding: 20px;
     float: left;
-    opacity: 1;
-    transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
+    
+    .main-work-content {
+        opacity: 1;
+        transition: all 300ms;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+    }
     .main-work-content:hover {
         opacity: .7;
     }
@@ -386,7 +369,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 860px) {
     .main-image-gallery-image {
         width: 50%;
     }
