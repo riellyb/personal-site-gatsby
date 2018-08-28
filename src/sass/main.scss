@@ -15,7 +15,6 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 128px;
   min-height: 100%;
 }
 
@@ -281,11 +280,8 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
     padding: 64px;
+    background-color: $grey;
 }
 
 .footer-item {
