@@ -7,6 +7,7 @@ const GalleryImage = (props) => (
         dpr="auto"
         responsive
         width="auto"
+        crop="scale"
         style={{maxWidth: '100%', display: 'block'}}
         publicId={props.id}>
             <Transformation quality="auto" fetchFormat="auto" />
