@@ -17,6 +17,7 @@ module.exports = {
                 icon: 'src/images/icon.png',
                 crossOrigin: `use-credentials`
             }
-        }
+        },
+        'gatsby-plugin-offline'
     ]
 };
