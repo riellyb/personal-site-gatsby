@@ -6,7 +6,87 @@ $grey: rgba(230, 230, 230, 1);
 $grey2: #7A7D7D;
 $black: #222;
 $true-black: #000;
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,19 +94,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+
 * {
     box-sizing: border-box;
     z-index: 1;
 }
+
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  position: relative;
-  margin: 0;
-  min-height: 100%;
-  font-size: 16px;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    font-size: 16px;
 }
 
 h1,
@@ -78,6 +160,7 @@ p {
 ul {
     font-size: 1.3em;
 }
+
 li {
     display: inline;
 }
@@ -107,9 +190,10 @@ a:hover {
         }
     }
 }
+
 .header {
     background-color: $black;
-    box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .cat {
@@ -121,7 +205,7 @@ a:hover {
     transition: all 500ms ease-in;
     opacity: 0;
     -webkit-animation: spin 300ms linear 1;
-            animation: spin 300ms linear 1;
+    animation: spin 300ms linear 1;
     @-webkit-keyframes spin {
         100% {
             -webkit-transform: rotate(360deg) scale(1);
@@ -138,7 +222,7 @@ a:hover {
     }
     &.deleted {
         -webkit-transform: scale(0);
-                transform: scale(0);
+        transform: scale(0);
     }
 }
 
@@ -212,7 +296,6 @@ a:hover {
     }
 }
 
-
 .main-section {
     padding: 50px 20px;
     overflow: hidden;
@@ -221,22 +304,24 @@ a:hover {
     margin: 0 auto;
     max-width: 1400px;
 }
+
 .section-header {
     background-color: #222;
     color: white;
     padding: 20px;
 }
- 
+
 .skills {
     display: flex;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     h3 {
         padding-left: 20px;
         margin-bottom: 20px;
     }
 }
+
 .skill-column {
     width: 33.3333%;
     z-index: 0;
@@ -274,7 +359,7 @@ a:hover {
     }
     &:hover {
         -webkit-transform: scale(1.04);
-                transform: scale(1.04);
+        transform: scale(1.04);
     }
 }
 
@@ -288,7 +373,6 @@ a:hover {
     width: 50%;
     padding: 20px;
     float: left;
-    
     .main-work-content {
         opacity: 1;
         transition: all 300ms;
@@ -332,6 +416,7 @@ a:hover {
         height: 100%;
     }
 }
+
 #about {
     padding-top: 100px;
     .intro-text {
@@ -353,7 +438,7 @@ a:hover {
     padding-left: 20px;
     margin: 0;
     @media only screen and (min-width: 1430px) {
-        margin-left: calc((100% - 1400px) / 2 );
+        margin-left: calc((100% - 1400px) / 2);
     }
     h2 {
         margin-bottom: 20px;
@@ -406,13 +491,12 @@ a:hover {
         text-align: center;
     }
 }
+
 .thanks {
     text-align: center;
     padding-top: 200px;
     min-height: calc(100vh - 256px);
-    @media only screen and(max-width: 600px) {
-
-    }
+    @media only screen and(max-width: 600px) {}
 }
 
 @media only screen and (max-width: 1300px) {
@@ -533,7 +617,7 @@ a:hover {
     .footer-item {
         width: 50px;
         height: 50px;
-        margin: 20px;    
+        margin: 20px;
         img {
             height: 100%;
         }
