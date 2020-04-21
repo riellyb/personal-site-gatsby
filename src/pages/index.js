@@ -5,11 +5,6 @@ import PortfolioItem from '../components/portfolioItem';
 import About from '../components/about';
 import Skills from '../components/skills';
 import ContactForm from '../components/contactForm';
-import sogImage from '../images/state-of-gold.jpg';
-import rbbgImage from '../images/rbbg.jpg';
-import jacketImage from '../images/cc-jacketguide.jpg';
-import andiamoImage from '../images/cc-andiamo.jpg';
-import quoteOfTheMinuteImage from '../images/qotm.jpg';
 import axios from 'axios';
 import { CloudinaryContext } from 'cloudinary-react';
 import cloudinary from 'cloudinary-core';
@@ -114,7 +109,7 @@ class IndexPage extends Component {
             <div className="main-work-gallery">
               <PortfolioItem
                 href={'https://www.quoteoftheminute.com/'}
-                src={quoteOfTheMinuteImage}
+                src="https://res.cloudinary.com/brendanrielly/image/upload/v1587428790/qotm.jpg"
                 title={
                   <h3>
                     Quote of the
@@ -128,7 +123,7 @@ class IndexPage extends Component {
                 href={
                   'https://www.backcountry.com/stories/on-the-road-in-california'
                 }
-                src={sogImage}
+                src="https://res.cloudinary.com/brendanrielly/image/upload/v1528399304/state-of-gold.jpg"
                 title={
                   <h3>
                     Backcountry
@@ -140,7 +135,7 @@ class IndexPage extends Component {
               />
               <PortfolioItem
                 href={'https://www.competitivecyclist.com/sc/road-bike-guide'}
-                src={rbbgImage}
+                src="https://res.cloudinary.com/brendanrielly/image/upload/v1528399304/rbbg.jpg"
                 title={
                   <h3>
                     Competitive Cyclist
@@ -152,7 +147,7 @@ class IndexPage extends Component {
               />
               <PortfolioItem
                 href={'https://www.competitivecyclist.com/sc/andiamo'}
-                src={andiamoImage}
+                src="https://res.cloudinary.com/brendanrielly/image/upload/v1528399298/cc-andiamo.jpg"
                 title={
                   <h3>
                     Competitive Cyclist
