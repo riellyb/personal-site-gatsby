@@ -1,5 +1,4 @@
 import React from 'react';
-import me from '../images/me.jpg';
 const About = (props) => (
   <div>
     <div className="main-content-heading">
