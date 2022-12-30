@@ -6,7 +6,7 @@
     "dependencies": {
         "axios": "^0.18.0",
         "cloudinary-react": "^1.1.0",
-        "gatsby": "^2.1.30",
+        "gatsby": "^2.32.13",
         "gatsby-plugin-manifest": "^2.0.23",
         "gatsby-plugin-offline": "^2.0.25",
         "gatsby-plugin-react-helmet": "^3.0.9",
