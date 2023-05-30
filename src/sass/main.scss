@@ -312,29 +312,17 @@ a:hover {
 }
 
 .skills {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  color: $text-color;
+  display: block;
   font-size: 1em;
+
   b {
     font-weight: bold;
   }
 }
 
-.skill-column {
-  width: 50%;
-  z-index: 0;
-}
-
-.skills-list {
-  list-style-type: disc;
-  padding-left: 40px;
-  li {
-    display: list-item;
-    padding: 5px 0;
-  }
+.skill-section {
+  display: block;
+  padding: 1em 0;
 }
 
 .main-image-gallery {
