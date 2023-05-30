@@ -1,38 +1,38 @@
 {
-    "name": "brendan-rielly-site",
-    "description": "Brendan Rielly Portfolio Site",
-    "version": "1.0.0",
-    "author": "Brendan Rielly <brendanrielly@gmail.com>",
-    "dependencies": {
-        "axios": "^0.18.0",
-        "cloudinary-react": "^1.1.0",
-        "gatsby": "^2.1.30",
-        "gatsby-plugin-manifest": "^2.0.23",
-        "gatsby-plugin-offline": "^2.0.25",
-        "gatsby-plugin-react-helmet": "^3.0.9",
-        "gatsby-plugin-sass": "^2.0.11",
-        "graphql": "^14.1.1",
-        "node-sass": "^4.11.0",
-        "react": "^16.8.4",
-        "react-dom": "^16.8.4",
-        "react-helmet": "^5.2.0",
-        "react-images": "^0.5.19"
-    },
-    "keywords": [
-        "brendan rielly, web developer, software engineer, front end developer"
-    ],
-    "license": "MIT",
-    "scripts": {
-        "build": "gatsby build",
-        "develop": "gatsby develop",
-        "format": "prettier --write 'src/**/*.js'",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "devDependencies": {
-        "prettier": "^1.16.4"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/riellyb/personal-site-gatsby"
-    }
+  "name": "brendan-rielly-site",
+  "description": "Brendan Rielly Portfolio Site",
+  "version": "1.0.0",
+  "author": "Brendan Rielly <brendanrielly@gmail.com>",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cloudinary-react": "^1.1.0",
+    "gatsby": "^2.1.30",
+    "gatsby-plugin-manifest": "^2.0.23",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-sass": "^2.0.11",
+    "graphql": "^14.1.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-images": "^0.5.19"
+  },
+  "keywords": [
+    "brendan rielly, web developer, software engineer, front end developer, full-stack developer"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riellyb/personal-site-gatsby"
+  }
 }
