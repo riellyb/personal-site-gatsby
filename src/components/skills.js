@@ -5,27 +5,25 @@ const Skills = () => (
     <div className="skills-section">
       <b>Languages:</b> JavaScript, TypeScript, PHP
     </div>
+
     <div className="skills-section">
-      <b>Frameworks/Libraries:</b> ReactJS, NextJS, NodeJS, ExpressJS, GatsbyJS
+      <b>Frameworks & Libraries:</b> React, Next.js, Node.js, Express, Gatsby
     </div>
 
     <div className="skills-section">
-      <b>Testing:</b> Jest, React Testing Library, CucumberJS, Mocha, Chai
+      <b>Testing:</b> Jest, React Testing Library, Cucumber.js, Mocha, Chai
     </div>
 
     <div className="skills-section">
-      <b>Web Technologies:</b> HTML5, CSS3, Sass
-    </div>
-
-    <div className="skills-section">
-      <b>Version Control:</b> Git
+      <b>Web:</b> HTML5, CSS3, Sass
     </div>
 
     <div className="skills-section">
       <b>Databases:</b> MongoDB, MySQL
     </div>
+
     <div className="skills-section">
-      <b>Build Tools:</b> NPM, Grunt, Gulp, Webpack
+      <b>Tools & Platforms:</b> Git, Webpack, npm, Grunt, Gulp, Stripe
     </div>
   </div>
 );
