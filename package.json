@@ -3,23 +3,20 @@
   "description": "Brendan Rielly Portfolio Site",
   "version": "1.0.0",
   "author": "Brendan Rielly <brendanrielly@gmail.com>",
-  "engines": {
-    "node": ">=16.0.0"
-  },
   "dependencies": {
-    "axios": "^0.18.0",
-    "cloudinary-react": "^1.1.0",
-    "gatsby": "^2.1.30",
-    "gatsby-plugin-manifest": "^2.0.23",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.9",
-    "gatsby-plugin-sass": "^2.0.11",
-    "graphql": "^14.1.1",
-    "node-sass": "^4.11.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0",
-    "react-images": "^0.5.19"
+    "axios": "0.18.0",
+    "cloudinary-react": "1.1.0",
+    "gatsby": "2.1.30",
+    "gatsby-plugin-manifest": "2.0.23",
+    "gatsby-plugin-offline": "2.0.25",
+    "gatsby-plugin-react-helmet": "3.0.9",
+    "gatsby-plugin-sass": "2.0.11",
+    "graphql": "14.1.1",
+    "node-sass": "4.11.0",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-helmet": "5.2.0",
+    "react-images": "0.5.19"
   },
   "keywords": [
     "brendan rielly, web developer, software engineer, front end developer, full-stack developer"
